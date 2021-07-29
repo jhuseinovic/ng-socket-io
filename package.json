@@ -6,6 +6,10 @@
     "name": "Bougarfaoui El Houcine",
     "email": "bougarfaoui.el.houcine@gmail.com"
   },
+  "contributors": [{
+    "name": "John Huseinovic",
+    "email": "john@huseinovic.net"
+  }],
   "main": "index.js",
   "module": "index.js",
   "jsnext:main": "index.js",
