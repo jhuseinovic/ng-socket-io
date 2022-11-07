@@ -5,11 +5,11 @@ import { SocketIoConfig } from './socketIoConfig';
 
 
 /** Socket factory */
-export function SocketFactory(config: SocketIoConfig) {
+export declare function SocketFactory(config: SocketIoConfig) {
     return new WrappedSocket(config);
 }
 
-export const SOCKET_CONFIG_TOKEN = new InjectionToken<SocketIoConfig>('__SOCKET_IO_CONFIG__');
+export declare const SOCKET_CONFIG_TOKEN = new InjectionToken<SocketIoConfig>('__SOCKET_IO_CONFIG__');
 
 @NgModule({})
 export declare class SocketIoModule {
