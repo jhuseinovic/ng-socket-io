@@ -9,7 +9,7 @@ export declare function SocketFactory(config: SocketIoConfig) {
     return new WrappedSocket(config);
 }
 
-export declare const SOCKET_CONFIG_TOKEN = new InjectionToken<SocketIoConfig>('__SOCKET_IO_CONFIG__');
+export const SOCKET_CONFIG_TOKEN = new InjectionToken<SocketIoConfig>('__SOCKET_IO_CONFIG__');
 
 @NgModule({})
 export declare class SocketIoModule {
