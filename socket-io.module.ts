@@ -12,7 +12,7 @@ export function SocketFactory(config: SocketIoConfig) {
 export const SOCKET_CONFIG_TOKEN = new InjectionToken<SocketIoConfig>('__SOCKET_IO_CONFIG__');
 
 @NgModule({})
-export class SocketIoModule {
+export declare class SocketIoModule {
     static forRoot(config: SocketIoConfig): ModuleWithProviders<any> {
         return {
             ngModule: SocketIoModule,
