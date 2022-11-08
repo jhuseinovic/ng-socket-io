@@ -2,7 +2,7 @@ import {  Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/share'; 
 
-import * as io from 'socket.io-client';
+import io from 'socket.io-client';
 
 import { SocketIoConfig } from './socketIoConfig';
 import { SOCKET_CONFIG_TOKEN } from './socket-io.module';
