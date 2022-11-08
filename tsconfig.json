@@ -12,7 +12,8 @@
         "outDir": "./",
         "typeRoots": [
             "./node_modules/@types"
-        ]
+        ],
+        "esModuleInterop": true
     },
     "files": [
         "./index.ts"
