@@ -11,7 +11,7 @@ export class WrappedSocket {
     subscribersCounter = 0;
     ioSocket: any;
 
-    constructor(@Inject(SOCKET_CONFIG_TOKEN) config: SocketIoConfig) {
+    constructor(config: SocketIoConfig) { // @Inject(SOCKET_CONFIG_TOKEN) config: SocketIoConfig
         const url: string = config.url || '';
         const options: any = config.options || {};
         this.ioSocket = io(url, options);
