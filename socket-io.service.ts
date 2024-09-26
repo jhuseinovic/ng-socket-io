@@ -1,11 +1,9 @@
-import {  Inject } from '@angular/core';
-import { Observable } from 'rxjs';
 import 'rxjs/add/operator/share'; 
 
 import io from 'socket.io-client';
 
 import { SocketIoConfig } from './socketIoConfig';
-import { SOCKET_CONFIG_TOKEN } from './socket-io.module';
+import { Observable } from 'rxjs/internal/Observable';
 
 export class WrappedSocket {
     subscribersCounter = 0;
