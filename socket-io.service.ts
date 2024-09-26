@@ -46,15 +46,15 @@ export class WrappedSocket {
     /** create an Observable from an event */
     fromEvent<T>(eventName: string): Observable<T> {
         this.subscribersCounter++;
-        return Observable.create( (observer: any) => {
-             this.ioSocket.on(eventName, (data: T) => {
-                 observer.next(data);
-             });
-             return () => {
-                 if (this.subscribersCounter === 1)
+        return new Observable((observer: any) => {
+            this.ioSocket.on(eventName, (data: T) => {
+                observer.next(data);
+            });
+            return () => {
+                if (this.subscribersCounter === 1)
                     this.ioSocket.removeListener(eventName);
             };
-        }).share();
+        });
     }
    
     /* Creates a Promise for a one-time event */
