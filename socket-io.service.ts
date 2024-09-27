@@ -1,4 +1,4 @@
-import 'rxjs/add/operator/share'; 
+// import 'rxjs/add/operator/share'; 
 
 import io from 'socket.io-client';
 
